@@ -1,0 +1,671 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+:root {
+  --Padding-5: 5%;
+  --Padding-3: 3%;
+}
+
+header {
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(image/banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  transition: 2s ease;
+}
+
+/* style the navagation bar */
+nav {
+  width: 93vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav a img {
+  margin-top: 5px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 35vw;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+nav ul li::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0;
+  position: absolute;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav .fa {
+  display: none;
+}
+
+/* ************************************************************ */
+
+/* style to content header */
+
+.content-header {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  gap: 2rem;
+  margin: auto;
+}
+
+.content-header h1 {
+  font-size: 4rem;
+}
+.content-header p {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.content-header button {
+  padding: 10px;
+  font-weight: 600;
+  border: 2px solid rgb(153, 151, 149);
+  cursor: pointer;
+}
+.content-header button:hover {
+  background-color: rgba(165, 42, 42, 0.164);
+  color: white;
+  border-color: rgba(165, 42, 42, 0.164);
+  box-shadow: 0 0 50px 0px rgb(0, 0, 0, 0.5);
+}
+
+/* ************************************************************ */
+
+.cours-offer {
+  width: 90vw;
+  margin: auto;
+  padding-top: var(--Padding-5);
+}
+.cours-content {
+  text-align: center;
+}
+.cours-content h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  transition: 0.2s ease-in 0.2s;
+  letter-spacing: normal;
+}
+.cours-content h1:hover {
+  letter-spacing: 3px;
+}
+.cours-content p {
+  font-size: 0.9rem;
+}
+
+.card-course {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: var(--Padding-3);
+}
+.card {
+  width: 28vw;
+  background-color: #a52a2a2a;
+  padding: 2%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+}
+
+/* ******************************************************** */
+
+/* style to compus */
+.campus {
+  padding-top: var(--Padding-5);
+}
+/* style to bio campus */
+
+.bio-campus {
+  text-align: center;
+}
+.bio-campus h1 {
+  font-size: 3.4rem;
+  letter-spacing: 3px;
+}
+.bio-campus h1:hover {
+  letter-spacing: normal;
+  transition: 0.2s ease-in 0.2s;
+}
+
+.bio-campus p {
+  font-weight: 300;
+}
+/* ----------------------------------------- */
+.Container-Campus-Img {
+  padding-top: var(--Padding-3);
+  display: flex;
+  width: 90vw;
+  height: 80vh;
+  justify-content: space-between;
+  margin: auto;
+}
+.Container-Campus-Img > div {
+  flex-basis: calc(88vw / 3);
+  position: relative;
+  overflow: hidden;
+}
+.Container-Campus-Img > div img {
+  width: 100%;
+  height: 100%;
+}
+.Card-Campus h3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #01022d60, #00000088);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  top: 0;
+  transition: 0.8s;
+  color: red;
+}
+.Card-Campus:hover h3 {
+  background: linear-gradient(to right, #01022d60, #0000001e);
+  align-items: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+
+/* *************************************************************** */
+.Container-Facilities {
+  padding-top: var(--Padding-5);
+  margin: auto;
+}
+.Bio-Facilities {
+  text-align: center;
+}
+
+.Bio-Facilities h1 {
+  font-size: 3.2rem;
+}
+
+.Bio-Facilities p {
+  font-weight: 400;
+}
+.Facilities-Img {
+  padding-top: var(--Padding-3);
+  margin: auto;
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+}
+.Card-Facilities img {
+  width: 28vw;
+  border-radius: 10px;
+}
+.Card-Facilities h3 {
+  text-align: center;
+  background-color: #a52a2a2a;
+  transform: scale(0.7);
+  border-radius: 15px;
+  padding: 4px;
+}
+.Card-Facilities h3:hover {
+  transform: scale(1);
+}
+.Card-Facilities p {
+  text-align: center;
+}
+
+/* ************************************************************* */
+
+.testimonials {
+  text-align: center;
+  padding-top: var(--Padding-5);
+}
+.testimonials h1 {
+  font-size: 3rem;
+}
+.testimonials p {
+  font-weight: 400;
+}
+.container-testimonials {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--Padding-3);
+  width: 90vw;
+  margin: auto;
+}
+.container-testimonials img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.container-testimonials > div {
+  width: 41.5vw;
+  background-color: #ff000025;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+}
+.container-testimonials img + div {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* *************************************************** */
+.cta {
+  width: 80vw;
+  max-height: 20rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(image/banner2.jpg);
+  margin: 5% auto;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+.cta h1 {
+  margin-bottom: 40px;
+}
+.cta a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid;
+  padding: 6px;
+  transition: 0.5s;
+}
+.cta a:hover {
+  border-color: #75101083;
+  background-color: #75101083;
+  font-size: 1.2rem;
+}
+/* ******************************************* */
+
+footer {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+footer .fa {
+  color: #751010dc;
+  padding: 1.5rem 2rem;
+  font-size: 0.8;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  /* margin: .8rem 0; */
+}
+
+/* //////////////////// Start style about US ///////////////// */
+
+/* ------------- Header About -------------- */
+
+main .sub-header {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.459),
+      rgba(0, 0, 0, 0.39)
+    ),url(./image/banner2.jpg) ;
+  background-position: center;
+  background-size: cover;
+  transition: 5s ease-in;
+}
+.Content-About {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+/* --------------Section About Start------------------- */
+.About-Content {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  padding-top: var(--Padding-5);
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: var(--Padding-5);
+}
+.About-Content img {
+  width: 44vw;
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.About-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.About-Content div {
+  width: 44vw;
+}
+.About-Content h1 {
+  font-size: 4vw;
+}
+.About-Content p {
+  text-align: justify;
+}
+.About-Content a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: 1px solid;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.About-Content a:hover {
+  background-color: #513232;
+  border-color: #513232;
+  color: white;
+  transition: 0.8s;
+}
+
+@media (max-width: 700px) {
+  .About-Content {
+    flex-direction: column;
+  }
+  .About-Content h1 {
+    font-size: 4vw;
+  }
+  .About-Content div,
+  .About-Content img {
+    width: 90vw;
+    margin-top: 1rem;
+  }
+}
+/* //////////////// Start contect us //////////////// */
+.location {
+  width: 80vw;
+  margin: auto;
+  padding-top: var(--Padding-5);
+}
+iframe {
+  width: 100%;
+  border-radius: 5px;
+}
+/* ---------------------------------------- */
+
+/* ******************** start Info-Contect ******************** */
+.Info-Contect {
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  padding-top: var(--Padding-5);
+  padding-bottom: var(--Padding-5);
+}
+.Info-Contect address {
+  width: 44vw;
+}
+.Info-Contect form {
+  width: 38vw;
+}
+.Info-Contect form input,
+.Info-Contect form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.Info-Contect form button {
+  padding: 0.6rem 1rem;
+  border: 2px solid #ffa500;
+  outline: none;
+  color: #ffa500;
+  background-color: #583f1017;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Info-Address .fa {
+  color: #ffa500;
+}
+.Info-Address > div {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+@media (max-width: 700px) {
+  .Info-Contect {
+    flex-direction: column;
+  }
+  .Info-Contect address {
+    width: 90vw;
+  }
+  .Info-Contect form {
+    width: 75vw;
+  }
+  .location {
+    width: 70vw;
+  }
+}
+
+/* ----------- Blog-content ------------------------------- */
+.Blog h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+.Blog-Content {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  padding-top: var(--Padding-5);
+}
+.Blog-Content .blog-left {
+  flex: 50vw;
+  text-align: left;
+}
+.Blog-Content img {
+  width: 90%;
+}
+.blog-left h2 {
+  color: #222;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.blog-right {
+  flex: 25vw;
+}
+.blog-right h3 {
+  background-color: #f44336;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.blog-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  padding: 8px;
+}
+.comment-box {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+.comment-box h3 {
+  text-align: left;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+.comment-form button {
+  padding: 0.6rem 1rem;
+  border: 2px solid #ffa500;
+  outline: none;
+  color: #ffa500;
+  background-color: #583f1017;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .Blog h1 {
+    font-size: 1.5rem;
+  }
+  .Blog-Content {
+    flex-direction: column;
+  }
+}
+
+/* Start Media Quary   */
+
+@media (max-width: 700px) {
+  nav .fa {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    right: -35vw;
+    top: 0;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #323b51;
+    height: 100vh;
+    z-index: 2;
+    transition: 1s ease-out;
+    gap: 5rem;
+    font-weight: 500;
+    padding: 2rem;
+  }
+  nav .fa {
+    font-size: 1.8rem;
+    color: rgb(255, 0, 0);
+  }
+
+  /* ---------------------------------------- */
+
+  .content-header h1 {
+    font-size: 6vw;
+  }
+  .content-header p {
+    letter-spacing: normal;
+  }
+  .cours-content h1 {
+    font-size: 9vw;
+  }
+  .card-course {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+  }
+  .card-course > div {
+    width: 90vw;
+  }
+  /* ---------------------------------------- */
+  .bio-campus h1 {
+    font-size: 7vw;
+  }
+  .Container-Campus-Img {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .Container-Campus-Img > div {
+    flex-basis: 90vw;
+    height: 100%;
+  }
+
+  /*  R------------------------------------------- */
+  .Bio-Facilities h1 {
+    font-size: 7vw;
+    text-align: center;
+    margin-top: var(--Padding-5);
+  }
+  .Bio-Facilities p {
+    font-weight: 200;
+  }
+  .Facilities-Img {
+    flex-direction: column;
+  }
+  .Card-Facilities img {
+    width: 80vw;
+    justify-content: center;
+  }
+  .testimonials h1 {
+    font-size: 7vw;
+  }
+  .container-testimonials {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .container-testimonials > div {
+    width: 100vw;
+  }
+  .cta {
+    width: 100vw;
+    margin: 5%;
+  }
+  .cta h1 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 413px) {
+  nav ul {
+    position: absolute;
+    right: 350vw;
+    top: 0;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #513232;
+    height: 100vh;
+    z-index: 2;
+    transition: 1s ease-out;
+    gap: 5rem;
+    font-weight: 500;
+    padding: 2rem;
+  }
+}
+/* End Media Quary   */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/6e95d468c1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/6e95d468c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+</head>
+
+<body>
+    <main>
+        <header class="sub-header">
+            <nav>
+                <a href="#"><img src="./image/logo.png" alt=""></a>
+
+                <ul id="navLinks">
+                    <i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+                    <li><a href="./index.html">home </a></li>
+                    <li><a href="./About.html">about</a></li>
+                    <li><a href="./Course.html">course</a></li>
+                    <li><a href="./Blog.html">bloge</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <!-- content in header -->
+            <section class="Content-About">
+                <h1 style="padding-top: 5rem;"> our courses</h1>
+
+            </section>
+        </header>
+        <!-- /* --------------Section About Start------------------- */ -->
+        <section class="About-Content">
+
+            <div class="About-col">
+                <h1> we are world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam
+                    quisquam praesentium quis error
+                    quisquam praesentium quis errordolorum quisquam praesentium quis error
+                    dolorum eligendi laboriosam consectetur deserunt minima nihil
+                    pariatur nisi eius eum alias, facilis
+                    vel ab veritatis!</p>
+                <a href="#"> explor now</a>
+            </div>
+            <img src="./image/about.jpg" alt="">
+        </section>
+        <!-- /* --------------Section About End------------------- */ -->
+
+        <!-- --------------------This Foooter start-------------- -->
+        <footer>
+            <h4>about us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugiat aliquam enim libero <br> magni sit
+                voluptates. Velit nihil corrupti magni.</p>
+            <div>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <h6> made with "badwy coding" ... <i class="fa-regular fa-copyright"></i></h6>
+        </footer>
+        <!-- --------------------This Foooter End-------------- -->
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.right = "-35vw"
+        }
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+    </script>
+</body>
+
+</html>
